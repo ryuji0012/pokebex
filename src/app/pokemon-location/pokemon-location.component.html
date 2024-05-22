@@ -1,0 +1,6 @@
+<section class="listing">
+    <img class="listing-photo" [src]="pokemonLocation.photo" alt="">
+    <a class="listing-location">No.{{pokemonLocation.id}}</a>
+    <h2 class="listing-heading">{{ pokemonLocation.name }}</h2>
+    <a [routerLink]="['/details',pokemonLocation.id]">詳細</a>
+</section>

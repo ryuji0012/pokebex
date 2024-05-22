@@ -1,0 +1,12 @@
+<section>
+    <form>
+      <input type="text" placeholder="ここにキーワードを入力" #filter>
+      <button class="primary" type="button"(click)="filterResults(filter.value)">検索</button>
+    </form>
+  </section>
+  <section class="results">
+    <app-pokemon-location 
+    *ngFor="let pokemonLocation of filteredLocationList"
+    [pokemonLocation]="pokemonLocation">
+    </app-pokemon-location>
+  </section>
